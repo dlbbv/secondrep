@@ -1,0 +1,315 @@
+body {
+	background: #000;
+}
+
+.bgvideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -9999;
+}
+
+.shapka {
+	position: relative;
+	width:100%;
+	margin:0 auto;
+}
+
+.center {
+	width: 80%;
+	margin: 0% auto;
+}
+
+.podval {
+	width: 100%;
+	margin: 0% auto;
+}
+
+.line {
+	border: 1px solid white;
+	width: 95%;
+	margin: 0 auto;
+}
+
+.line2 {
+	border: 1px solid white;
+	width: 50%;
+	opacity: 1;
+}
+
+.line3 {
+	border: 1px solid white;
+	width: 50%;
+	align: right;
+	opacity: 1;
+}
+
+.time {position: fixed; color:Lavender; font:22pt Montserrat; font-weight: 300; width: 99%; text-align:right;}
+
+.zagolovok {font:34pt Montserrat; font-weight: 800; color:#fff; text-align:center; text-shadow: PapayaWhip 0 0 5px;}
+
+/*Шапка*/
+.shapcontainer {overflow:hidden;width:97%; margin:0 auto;}
+.shapbox {white-space:normal; width:100%;}
+.shapbox div {display:inline-block; border: 0px solid white;}
+.par {font:55pt Montserrat; font-weight: 800; color:#fff; 	text-align:left; line-height: 0.8em; text-shadow: PapayaWhip 0 0 10px;}
+.opisanie {font:12pt Montserrat; font-weight: 100; color:#fff; 	text-align:left; line-height: 1em; text-shadow: PapayaWhip 0 0 10px;}
+.infoshapka {font:18pt Montserrat; font-weight: 100; color:#fff; text-align:right; width:100%; text-shadow: PapayaWhip 0 0 10px; text-decoration:none;}
+.infoshapka:hover {color:PapayaWhip; text-shadow: white 0 0 10px;}
+.logo {width: 100%; margin: 0 auto;}
+
+.iconcont {overflow:hidden; width:100%; margin:0 auto;}
+.iconbox {white-space:no-wrap; width:100%;}
+.iconbox div {display:inline-block; border: 0px solid white; width:30%;}
+
+/*Центр*/
+.textabout {font:16pt Montserrat; font-weight: 600; color:#fff; text-align:center; width:100%; margin: 0 auto;}
+
+.preimcont {overflow:hidden; width:100%; margin:0 auto;}
+.preimbox {white-space:no-wrap;}
+.preimbox div {display:inline-block; border: 0px solid white;}
+.preim {font:18pt Montserrat; font-weight: 100; color:#fff; text-shadow: PapayaWhip 0 0 10px;}
+
+/*Подвал*/
+.zagpol {font:14pt Montserrat; font-weight: 400; color:#fff; text-align:center; text-shadow: PapayaWhip 0 0 4px;}
+.polconf {font:10pt Montserrat; font-weight: 100; color:#fff; }
+.prava {font:10pt Montserrat; font-weight: 400; color:#fff; text-align:center;}
+.link {
+    text-decoration: none;
+    cursor: hand;
+    cursor: pointer;
+	text-align:center;
+	font:14pt Montserrat;
+	font-weight: 400;
+	color:#fff;
+	text-shadow: PapayaWhip 0 0 4px;
+}
+
+.pol {
+	text-align:start;
+	font:14pt Montserrat;
+	font-weight: 200;
+	color:#fff;
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+/* Настройки маркированного списка */
+.hover-effect-cover {
+    list-style:none;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+.hover-effect-cover li {
+    position: relative;
+    width: 32%; /* Задаем ширину элемента списка с картинкой*/
+    display: inline-block;
+    background-color: none;
+    margin: 0;
+    overflow: hidden;
+	border-radius: 40px;
+}
+/* Заголовок, текст и ссылка */
+.hover-effect-cover li h3{
+    color: #fff;
+    font:18pt Montserrat;
+	font-weight: 700;
+	text-shadow: PapayaWhip 0 0 22px;
+}
+.hover-effect-cover li p{
+    color: #fff;
+	font:16pt Montserrat;
+	font-weight: 400;
+	text-shadow: PapayaWhip 0 0 22px;
+}
+.hover-effect-cover li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+	font:12pt Montserrat;
+	font-weight: 300;
+    color: #fff;
+    background: #000;
+    border-radius: 20px;
+    margin: 0 auto;
+    transition: all 0.4s ease-in-out;
+}
+.hover-effect-cover li a:hover {
+    background: #FFFFFF;
+    color: #000;
+}
+/* Выезжающий блок с текстом для панели слева направо */
+.hover-effect-cover li > div.effect-to-right {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.hover-effect-cover li:hover > div.effect-to-right {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.hover-effect-cover li div.effect-to-right {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.99); /* Фон блока при наведении */
+    transition: all 0.4s ease-in-out;
+    color: #fff;
+    transform: translate(-250px, 0px) rotate(0deg); /* Направление выезжающей панели */
+}
+.hover-effect-cover li:hover div.effect-to-right {
+    opacity: 1;
+    transform: translate(0px, 0px) rotate(0deg);
+}
+/* Выезжающий блок с текстом для панели справа налево */
+.hover-effect-cover li > div.effect-to-left {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.hover-effect-cover li:hover > div.effect-to-left {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.hover-effect-cover li div.effect-to-left {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.99); /* Фон блока при наведении */
+    transition: all 0.4s ease-in-out;
+    color: #fff;
+    transform: translate(250px, 0px) rotate(0deg); /* Направление выезжающей панели */
+}
+.hover-effect-cover li:hover div.effect-to-left {
+    opacity: 1;
+    transform: translate(0px, 0px) rotate(0deg);
+}
+/* Выезжающий блок с текстом для панели снизу вверх */
+.hover-effect-cover li > div.effect-to-top {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.hover-effect-cover li:hover > div.effect-to-top {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.hover-effect-cover li div.effect-to-top {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.99); /* Фон блока при наведении */
+    transition: all 0.4s ease-in-out;
+    color: #fff;
+    transform: translate(0px, 250px) rotate(0deg); /* Направление выезжающей панели */
+}
+.hover-effect-cover li:hover div.effect-to-top {
+    opacity: 1;
+    transform: translate(0px, 0px) rotate(0deg);
+}
+/* Выезжающий блок с текстом для панели сверху вниз */
+.hover-effect-cover li > div.effect-to-bottom {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.hover-effect-cover li:hover > div.effect-to-bottom {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.hover-effect-cover li div.effect-to-bottom {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.99); /* Фон блока при наведении */
+    transition: all 0.4s ease-in-out;
+    color: #fff;
+    transform: translate(0px, -250px) rotate(0deg); /* Направление выезжающей панели */
+}
+.hover-effect-cover li:hover div.effect-to-bottom {
+    opacity: 1;
+    transform: translate(0px, 0px) rotate(0deg);
+}
+
+
+
+
+.podtinfo {color: black; text-shadow: PapayaWhip 0 0 2px; font:12pt Montserrat; font-weight: 200;}
+
+/* modal */
+.modal_age {
+	display: none;
+}
+
+#info_age_modal {
+    max-width: 420px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.modal_title {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.modal_age_text {
+	text-align: center;
+}
+
+.modal_age_text span{
+	text-transform: uppercase;
+	font-weight: bold;
+	color: red;
+	margin-bottom: 10px;
+	display: inline-block;
+	font:20pt Montserrat;
+	font-weight: 400;
+}
+
+.modal_age_but {
+	text-align: center;
+	margin-top: 15px;
+	color: black;
+	font:16pt Montserrat;
+	font-weight: 400;
+}
+
+.modal_but_yes, .modal_but_no {
+	display: inline-block;
+	padding: 8px 12px;
+	border-radius: 5px;
+	background: white;
+	cursor: pointer;
+	border: 1px solid black;
+}
+
+.modal_but_yes:hover, .modal_but_no:hover {
+	background: black;
+	border: 2px solid black;
+}
+
+.modal_age_but:hover {
+	color: white;
+}
